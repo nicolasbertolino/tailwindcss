@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tailwind CSS</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/base.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/components.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/utilities.min.css" />
+</head>
+
+<body>
+
+	<!-- Barre de navigation -->
+	<nav class="bg-white relative md:fixed top-0 right-0 left-0 z-10 shadow">
+		<div class="flex justify-around md:flex-col md:justify-center items-center py-4">
+			<!-- Logo à gauche -->
+			<img class="w-12 md:w-32" src="https://www.jalis.fr/site/images/interface/logo.png" alt="logo">
+			<!-- Liens à droite -->
+			<ul class="hidden md:flex mt-5">
+				<li class="mr-5">
+					<a href="#" class="duration-500 hover:text-blue-400 focus:text-blue-400">Accueil</a>
+				</li>
+				<li class="mx-5">
+					<a href="#" class="duration-500 hover:text-blue-400 focus:text-blue-400">Services</a>
+				</li>
+				<li class="mx-5">
+					<a href="#" class="duration-500 hover:text-blue-400 focus:text-blue-400">À propos</a>
+				</li>
+				<li class="ml-5">
+					<a href="#" class="duration-500 hover:text-blue-400 focus:text-blue-400">Contact</a>
+				</li>
+			</ul>
+			<!-- Mobile menu -->
+			<div class="-mr-2 flex md:hidden">
+				<button
+					class="p-2 rounded-md duration-500 hover:text-blue-400 hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white">
+					<!-- Hamburger -->
+					<svg class="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<header class="relative">
+		<img class="w-full object-cover h-full md:h-screen" src="1.jpg" alt="">
+		<div class="absolute inset-0 bg-black bg-opacity-25"></div>
+		<div class="absolute inset-0 flex items-center justify-center">
+			<h1 class="text-white text-3xl md:text-5xl font-bold text-center uppercase px-4">Washin' myself in me
+				clothes</h1>
+		</div>
+	</header>
+
+	<!-- Main content -->
+	<main>
+
+		<!-- Texte + Description -->
+		<section>
+			<!-- équivalent du centrage / peut être mis dans une classe @apply -->
+			<div class="max-w-screen-lg mx-auto my-8 py-6 px-4 sm:px-6 lg:px-8">
+				<h2 class="text-3xl uppercase text-center font-serif mb-8">Lorem ipsum dolor sit amet</h2>
+				<p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error non aliquam
+					eligendi labore laudantium rerum veniam, recusandae dicta qui. Libero laudantium et atque, quam aliquam
+					labore nesciunt voluptate assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eos
+					repudiandae neque sunt aut itaque, voluptatem nam. Molestiae corrupti ut laudantium harum ipsa. Dolor,
+					aut explicabo culpa eum laudantium qui.</p>
+				<p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas obcaecati, nemo tenetur vitae
+					dicta assumenda ab. Voluptatum tenetur praesentium suscipit, ex reiciendis impedit cum distinctio.
+					Cupiditate doloribus id tempore reiciendis.</p>
+				<p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, molestiae. Quae voluptas
+					possimus praesentium quasi velit aliquam, minima, non officiis impedit sunt itaque iste mollitia rem
+					accusamus facilis officia aut.</p>
+			</div>
+		</section>
+
+		<!-- Texte + Description + Image -->
+		<section class="bg-gray-200 my-8">
+			<!-- centrage -->
+			<div class="max-w-screen-lg mx-auto py-6 px-4 sm:px-6 lg:px-8">
+				<div class="flex items-center flex-wrap md:flex-no-wrap gap-10 lg:gap-20">
+					<div>
+						<h3 class="text-2xl font-serif mb-5">Lorem Ipsum</h3>
+						<p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error non
+							aliquam eligendi labore laudantium rerum veniam, recusandae dicta qui. Libero laudantium et
+							atque, quam aliquam labore nesciunt voluptate assumenda? Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Veniam eos repudiandae neque sunt aut itaque, voluptatem nam.
+							Molestiae corrupti ut laudantium harum ipsa. Dolor, aut explicabo culpa eum laudantium qui.
+						</p>
+						<p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas obcaecati, nemo
+							tenetur vitae dicta assumenda ab. Voluptatum tenetur praesentium suscipit, ex reiciendis
+							impedit cum distinctio. Cupiditate doloribus id tempore reiciendis.</p>
+						<p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, molestiae. Quae
+							voluptas possimus praesentium quasi velit aliquam, minima, non officiis impedit sunt itaque
+							iste mollitia rem accusamus facilis officia aut.</p>
+					</div>
+					<div>
+						<img src="2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Encarts -->
+		<section>
+			<!-- centrage -->
+			<div class="max-w-screen-lg mx-auto my-8 py-6 px-4 sm:px-6 lg:px-8">
+				<ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+					<li><img class="object-cover sm:h-48 w-full" src="1.jpg" alt=""></li>
+					<li><img class="object-cover sm:h-48 w-full" src="3.jpg" alt=""></li>
+					<li><img class="object-cover sm:h-48 w-full" src="2.jpg" alt=""></li>
+					<li><img class="object-cover sm:h-48 w-full" src="1.jpg" alt=""></li>
+					<li><img class="object-cover sm:h-48 w-full" src="3.jpg" alt=""></li>
+					<li><img class="object-cover sm:h-48 w-full" src="2.jpg" alt=""></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Annonces -->
+		<section>
+			<!-- centrage -->
+			<div class="max-w-screen-lg mx-auto my-8 py-6 px-4 sm:px-6 lg:px-8">
+				<h2 class="text-3xl uppercase text-center font-serif mb-8">À découvrir</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-12">
+					<div>
+						<img class="object-cover h-64 md:h-56 w-full" src="1.jpg" alt="">
+						<div class="p-3">
+							<h3 class="text-xl font-serif mb-5">Plane disserendi dividendo via dividendo si de ambigua ambigua docet</h3>
+							<p>His cognitis Gallus ut serpens adpetitus telo vel saxo iamque spes extremas opperiens et succurrens saluti suae quavis ratione colligi omnes.</p>
+						</div>
+					</div>
+					<div>
+						<img class="object-cover h-64 md:h-56 w-full" src="2.jpg" alt="">
+						<div class="p-3">
+							<h3 class="text-xl font-serif mb-5">Effectu deinde deinde herbidas metu Aboraeque proditus regionem praestitutis effectu flagitii suorum dux egressus celebritati</h3>
+							<p>Non ergo erunt homines deliciis diffluentes audiendi, si quando de amicitia, quam nec usu nec ratione habent cognitam, disputabunt.</p>
+						</div>
+					</div>
+					<div>
+						<img class="object-cover h-64 md:h-56 w-full" src="3.jpg" alt="">
+						<div class="p-3">
+							<h3 class="text-xl font-serif mb-5">Quis conscripti hoc provinciis etiam sic intellego alia Nam omnia hoc habere provinciis conscripti suspicione</h3>
+							<p>His cognitis Gallus ut serpens adpetitus telo vel saxo iamque spes extremas opperiens et succurrens saluti suae quavis ratione colligi omnes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="bg-gray-200 border-solid border-t-4 border-blue-300">
+		<!-- centrage -->
+		<div class="max-w-screen-lg mx-auto mt-8 py-6 px-4 sm:px-6 lg:px-8">
+			<div class="grid sm:grid-cols-2 place-items-center gap-y-10 py-12">
+				<ul>
+					<li>16 rue de l'espérance,<br>75013 Paris</li>
+					<li>contact@standingo.fr</li>
+					<li>standingofr.s53.moncms.com</li>
+					<li>06 21 51 57 61</li>
+				</ul>
+				<ul>
+					<li>16 rue de l'espérance,<br>75013 Paris</li>
+					<li>contact@standingo.fr</li>
+					<li>standingofr.s53.moncms.com</li>
+					<li>06 21 51 57 61</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
