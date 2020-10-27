@@ -5,7 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tailwind CSS</title>
-	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/base.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/components.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/utilities.min.css" />
 </head>
 
 <body>
@@ -49,7 +52,8 @@
 		<img class="w-full object-cover h-full md:h-screen" src="1.jpg" alt="">
 		<div class="absolute inset-0 bg-black bg-opacity-25"></div>
 		<div class="absolute inset-0 flex items-center justify-center">
-			<h1 class="text-white text-3xl md:text-5xl font-bold text-center uppercase px-4">Washin' myself in me clothes</h1>
+			<h1 class="text-white text-3xl md:text-5xl font-bold text-center uppercase px-4">Washin' myself in me
+				clothes</h1>
 		</div>
 	</header>
 
@@ -79,7 +83,7 @@
 		<section class="bg-gray-200 my-8">
 			<!-- centrage -->
 			<div class="max-w-screen-lg mx-auto py-6 px-4 sm:px-6 lg:px-8">
-				<div class="flex items-center flex-wrap md:flex-no-wrap gap-10 lg:gap-20">
+				<div class="grid md:grid-cols-2 items-center gap-10 lg:gap-20">
 					<div>
 						<h3 class="text-2xl font-serif mb-5">Lorem Ipsum</h3>
 						<p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error non
@@ -95,9 +99,7 @@
 							voluptas possimus praesentium quasi velit aliquam, minima, non officiis impedit sunt itaque
 							iste mollitia rem accusamus facilis officia aut.</p>
 					</div>
-					<div>
-						<img src="2.jpg" alt="">
-					</div>
+					<img class="" src="2.jpg" alt="">
 				</div>
 			</div>
 		</section>
